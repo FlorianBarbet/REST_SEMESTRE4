@@ -1,0 +1,18 @@
+*~
+*.swp
+# Eclipse
+.project
+.classpath
+.settings
+target/
+# Intellij
+.idea/
+*.iml
+# database file
+data.db
+
+# maven shade plugin
+dependency-reduced-pom.xml
+
+# cli log file
+cli.log

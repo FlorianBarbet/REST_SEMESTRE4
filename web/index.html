@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Jobber Meister</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item for-logoff">
+                        <a class="nav-link js-scroll-trigger" href="#connexion" data-toggle="modal" data-target="#login-modal">Connexion</a>
+                    </li>
+                    <li class="nav-item for-logged">
+                        <a class="profil nav-link js-scroll-trigger" href="#profil">Profil</a>
+                    </li>
+                    <li class="nav-item for-employeur">
+                        <a class="resultats nav-link js-scroll-trigger" href="#resultats">Mes resultats</a>
+                    </li>
+                    <li class="nav-item for-employeur">
+                        <a class="annonce nav-link js-scroll-trigger" href="#annonce">Créer annonce</a>
+                    </li>
+                    
+                    <li class="nav-item for-employeur">
+                        <a class="annonce nav-link js-scroll-trigger" href="#modif">update</a>
+                    </li>
+                    
+                    <li class="nav-item for-logged">
+                        <a class="nav-link js-scroll-trigger" href="#logoff">Se déconnecter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Connexion -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog"></div>
+            <div class="loginmodal-container">
+                <div class="login">
+                    <h1>Connectez vous sur votre compte</h1><br>
+                    <form id="login">
+                        <input type="text" name="user" placeholder="Nom d'utilisateur">
+                        <input type="password" name="pass" placeholder="Mot de passe">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Connexion">
+                    </form>
+                    <div class="login-message"></div>
+                    <div class="login-help">
+                        <a href="#" target="#inscription">S'inscrire</a> - <a href="#" target="#forgot">Mot de passe oublié </a>
+                    </div>
+                </div>
+                <div class="signup">
+                    <h1>Rejoignez la communauté dès maintenant !</h1>
+                    <form id="signup">
+                        <input type="text" name="email" placeholder="E-mail">
+                        <input type="text" name="user" placeholder="Nom d'utilisateur">
+                        <input type="password" name="pass1" placeholder="Mot de passe">
+                        <input type="password" name="pass2" placeholder="Répetez le mot de passe">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                        <input type="submit" name="signup" class="signup signupmodal-submit" value="S'inscrire">    
+                    </form>
+                    <div class="signup-message"></div>
+                    <div class="signup-help">
+                        <a href="#" target="#login">Se connecter</a> - <a href="#" target="#forgot">Mot de passe oublié </a>
+                    </div>
+                </div>
+                <div class="forgot">
+                    <form id="forgot">
+                        <input type="text" name="email" placeholder="E-mail">
+                        <input type="submit" name="forgot" class="forgot forgotmodal-submit" value="Envoyer">
+                    </form>
+                    <div class="forgot-message"></div>
+                    <div class="forgot-help">
+                        <a href="#" target="#login">Se connecter</a> - <a href="#" target="#inscription">S'inscire</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <center><div class="fluid-container">
+                <img class="img-fluid" src="img/profile.png" alt="">
+            </div></center>
+            <div class="intro-text">
+                <span class="name">Jobber Meister</span>
+                <hr class="star-light">
+                <span class="skills">Trouver facilement un job</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="profil-page">
+        <img src="http://www.aovc.org/wp-content/uploads/2015/10/photo-à-venir-400x369.jpg" />
+        <center><p> ---------- USER INFO ---------- </p></center>
+        <h5>LOGIN : </h5><input type="text" name="user-login" value="?">
+        <h5>NOM : </h5><input type="text" name="user-name" value="?">
+        
+        <h5>PSWD : </h5><input type="password" name="user-pswd" style="width:175px; height:20px;" value="?">
+        <h5>AGE : </h5><input type="text" name="user-age" value="?">
+        <h5>ADRESSE : </h5><input type="text" name="user-location" value="?">
+        <h5>MAIL : </h5><input type="text" name="user-mail" value="?">
+        <center><p> ---------- DIPLOMES ---------- </p></center>
+        <input type="text" name="user-diploma" value="?">
+        <center><p> ---------- EXPERIENCES ---------- </p></center>
+        <input type="text" name="user-xp" value="?">
+        
+        <br />
+        <center>
+            <input id="majinfo" name="majinfo" type="submit" value="UPDATE"/>
+        </center>
+        
+    </div>
+
+    <div class="annonce-page">
+                        <input type="text" name="type" placeholder="Secteur">
+                        <input type="text" name="img" placeholder="Images">
+                        <input type="text" name="libelle" placeholder="Description">
+                        <input id="create" name="create" type="submit" value="Creer"/>
+        
+    </div>
+    
+    <div class="annonce-modif">
+                        <input type="id" name="id" placeholder="id">
+                        <input type="text" name="type" placeholder="Secteur">
+                        <input type="text" name="img" placeholder="Images">
+                        <input type="text" name="libelle" placeholder="Description">
+                        <input id="modif" name="modif" type="submit" value="modif"/>
+        
+    </div>
+    
+    <div class="tbg-0" style="background:#18BC9C; color:black;">
+        <div class="tbgwrap" style="background:#18BC9C; color:black">
+            <div class="tphoto">
+                <center>
+                    <img src="img/profile.png" style="width:220px; height:220px; border-radius:10%; margin:7%;" title="tphoto" alt="[photo]" />
+                    <div class="tname" color:black><b>Appuyer sur OUI pour valider une annonce ou sur NON pour la refuser.</b><br /><span class="type" style="color:black; float:left"></span></div>
+                    </center>
+            </div>
+            <center>
+                <div class="tcontrols">
+                    <div>
+                        <img class="tick" src="./img/tick.png" style="display:inline; width:100px; margin-top:50px;" title="tick" alt="[tick]" />
+                    </div>
+                    <div>
+                        <img class="cross" src="./img/cross.png" style="display:inline; width:100px; margin-top:50px;" title="cross" alt="[cross]" />
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+    
+    <div class="tbg-bone" style="background:#18BC9C; color:black;">
+        <div class="tbgwrap" style="background:#18BC9C; color:black">
+            <div class="tphoto">
+                <center>
+                    <img id="tgb-img" src="https://img4.hostingpics.net/pics/196035icons8Triste100.png" style="width:220px; height:220px; border-radius:10%; margin:7%;" title="tphoto" alt="[photo]" />
+                    <div id="type" color:black><b>Aucunes annonces disponibles</b><br/></div>
+                    <center>
+                    <div id="tname" style="color:black; float:left"></div>
+                    </center>
+                    </center>
+            </div>
+            <center>
+                <div class="tcontrols">
+                    <div>
+                        <img class="tick" src="./img/tick.png" style="display:inline; width:100px; margin-top:50px;" title="tick" alt="[tick]" />
+                    </div>
+                    <div>
+                        <img class="cross" src="./img/cross.png" style="display:inline; width:100px; margin-top:50px;" title="cross" alt="[cross]" />
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+    
+    <div class="tbg-3" style="background:#18BC9C; color:black;">
+        <div class="tbgwrap" style="background:#18BC9C; color:black">
+            <div class="tphoto">
+                <center>
+                    <img src="https://recruitee.com/hiring-resources/wp-content/uploads/2015/11/photo-1429051883746-afd9d56fbdaf.jpeg" style="width:220px; height:220px; border-radius:10%; margin:7%;" title="tphoto" alt="[photo]" />
+                    <div class="tname" color:black><b>Developeur java</b><br /><span class="type" style="color:black; float:left">Stage</span></div>
+                    <div class="tinfo"> 1800 💶 </div>
+                    </center>
+            </div>
+            <center>
+                <div class="tcontrols">
+                    <div>
+                        <img class="tick" src="./img/tick.png" style="display:inline; width:100px; margin-top:50px;" title="tick" alt="[tick]" />
+                    </div>
+                    <div>
+                        <img class="cross" src="./img/cross.png" style="display:inline; width:100px; margin-top:50px;" title="cross" alt="[cross]" />
+                    </div>
+                </div>
+            </center>
+            </div>
+        </div>
+
+    <div class="tbg-1" style="background:#18BC9C; color:black; display: none;">
+        <div class="tbgwrap" style="background:#18BC9C; color:black">
+            <div class="tphoto">
+                <center>
+                <img src="https://static.actu.fr/uploads/2016/02/cambrioleur-fotolia-Sergey-Lavrentev.jpg" style="width:220px; height:220px; border-radius:10%; margin:7%;" title="tphoto" alt="[photo]" />
+                <div class="tname" color:black><b>Demenageur illégal</b><br /><span class="type" style="color:black; float:left">Interim</span></div>
+                <div class="tinfo"> 250 💶 </div>
+                </center>
+            </div>
+            <center>
+                <div class="tcontrols">
+                    <img class="tick" src="./img/tick.png" style="display:inline; width:100px; margin-top:50px;" title="tick" alt="[tick]" />
+                    <img class="cross" src="./img/cross.png" style="display:inline; width:100px; margin-top:50px;" title="cross" alt="[cross]" />
+                </div>
+            </center>
+        </div>
+    </div>
+
+    <div class="tbg-2" style="background:#18BC9C; color:black; display: none;">
+        <div class="tbgwrap" style="background:#18BC9C; color:black">
+            <div class="tphoto">
+                <center>
+                    <img src="https://www.francebleu.fr/s3/cruiser-production/2017/06/d0a17503-d32b-4542-b2fb-eae8d4bb8b77/870x489_maxstockworld349635.jpg" style="width:220px; height:220px; border-radius:10%; margin:7%;" title="tphoto" alt="[photo]" />
+                    <div class="tname" color:black><b>Kebabier en chef</b><br /><span class="type" style="color:black; float:left">CDI</span></div>
+                    <div class="tinfo"> 1500 💶 </div>
+                </center>
+
+                </div>
+            <center>
+                <div class="tcontrols">
+                    <img class="tick" src="./img/tick.png" style="display:inline; width:100px; margin-top:50px;" title="tick" alt="[tick]" />
+                    <img class="cross" src="./img/cross.png" style="display:inline; width:100px; margin-top:50px;" title="cross" alt="[cross]" />
+                </div>
+            </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>
+                            IUT A Lille
+                            <br>Villeneuve d'Ascq, France
+                        </p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>nous contacter</h3>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-social btn-outline" href="www.facebook.com/jobbermeister">
+                                    <i class="fa fa-fw fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-social btn-outline" href="#">
+                                    <i class="fa fa-fw fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-social btn-outline" href="www.twitter.com/jobbermeister">
+                                    <i class="fa fa-fw fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-social btn-outline" href="#">
+                                    <i class="fa fa-fw fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-social btn-outline" href="#">
+                                    <i class="fa fa-fw fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>à propos</h3>
+                        <p>
+                            JobberMeister est un service créé par des étudiants dans le cadre d'un projet universitaire
+                            <br><a href="http://www.iut.univ-lille1.fr">- IUT A Lille -</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Projet Agile S4 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top d-lg-none">
+        <a class="btn btn-primary js-scroll-trigger" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

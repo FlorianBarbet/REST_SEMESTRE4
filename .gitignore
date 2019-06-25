@@ -1,0 +1,10 @@
+## classpath
+*/.classpath
+.classpath
+## settings
+*/.settings/*
+.settings/*
+## projects
+.project
+*/.project
+test.db
